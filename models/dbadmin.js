@@ -9,13 +9,11 @@ const loginSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  marksm1: {
-    type: Number,
-  },
-  attendence: {
-    type: Number,
+  username: {
+    type: String,
+    required: true,
   },
 });
-const Loginform = mongoose.model("student", loginSchema);
+const adminForm = mongoose.model("teacher", loginSchema);
 
-module.exports = Loginform;
+module.exports = adminForm;

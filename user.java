@@ -10,11 +10,11 @@ public class Mynta {
 
 	public static void main(String[] args)throws Exception {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mohan\\Desktop\\SE\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\nithin\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		//WebDriver webDriver;
         
-		driver.navigate().to("http://localhost:4000/");
+		driver.navigate().to("http://localhost:3000/");
 		//driver.wait(10);
 		driver.manage().window().maximize();
 		//driver.findElement(By.linkText("Login")).click();
@@ -26,6 +26,7 @@ public class Mynta {
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("111");
 		driver.findElement(By.id("submit-btn")).click();
 
+		
 		
         //driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb']")).click();
        //Thread.sleep(30);
